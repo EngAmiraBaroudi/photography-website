@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --prim-color: #f4e005;
+  --second-color: #d42929;
+  --body-color: #1c1c1c;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-light: #cdcdcd;
+
+  --Poppins-font: "Poppins", sans-serif;
+  --Bricolage-font: "Bricolage Grotesque", sans-serif;
+
+  --transition-regular: .3s;
+  --transition-slow: .6s;
+
+}
+
+body {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  overflow-x: hidden !important;
+}
+
+
+.design-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: var(--transition-regular);
+}
+
+.design-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: linear-gradient(0deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0) 40%);
+  opacity: 0;
+  transition: var(--transition-regular);
+  transition: .1s;
+}
+
+.design-card:hover::after {
+  opacity: 1;
+}
+
+.design-card:hover::before {
+  opacity: 1;
+}
+
+.design-card:hover .hidden-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
