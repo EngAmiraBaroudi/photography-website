@@ -8,7 +8,7 @@ import Service from './Pages/LandingPage/ServicesSection';
 import Blog from './Pages/LandingPage/BlogSection';
 import Team from './Pages/LandingPage/TeamSection';
 import Design from './Pages/LandingPage/DesignSection';
-import Book from './Pages/LandingPage/Booking'
+import Book from './Pages/LandingPage/BookingSection'
 
 function App() {
   return (
