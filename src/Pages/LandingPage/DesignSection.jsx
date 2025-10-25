@@ -23,7 +23,7 @@ const DesignSection = () => {
     <Navbar />
     <section
       id="Design"
-      className="px-6 md:px-12 lg:px-[12%] py-16 md:py-24 bg-black text-white"
+      className="px-6 md:px-12 lg:px-[12%] py-16 md:py-24 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500"
     >
       {/* Header */}
       <div

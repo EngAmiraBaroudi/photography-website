@@ -14,10 +14,10 @@ const BannerSection = () => {
       </div>
 
       {/* المحتوى */}
-      <div className="flex flex-col justify-center py-12 lg:py-16" data-aos="fade-left">
+      <div className="flex flex-col justify-center py-12 lg:py-16 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500" data-aos="fade-left">
         <div className="pl-6 md:pl-12 lg:pl-20">
           {/* العنوان */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem] font-bold text-white leading-tight md:leading-none mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem] font-bold  leading-tight md:leading-none mb-6">
             Let's <span className="text-purple-500">make an impact</span> together.
           </h2>
 

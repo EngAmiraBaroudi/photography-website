@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section
       id="About"
-      className="px-6 md:px-12 lg:px-[12%] grid grid-cols-1 lg:grid-cols-2 items-center gap-10 py-16 md:py-24 lg:py-[100px]"
+      className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 px-6 md:px-12 lg:px-[12%] grid grid-cols-1 lg:grid-cols-2 items-center gap-10 py-16 md:py-24 lg:py-[100px]"
     >
       {/* العمود الأول - العنوان */}
       <div

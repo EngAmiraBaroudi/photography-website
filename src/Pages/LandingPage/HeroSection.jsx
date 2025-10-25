@@ -7,12 +7,21 @@ const HeroSection = () => {
   return (
     <section
       id="Home"
-      className="relative min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center px-6 md:px-12 lg:px-[12%] overflow-hidden"
+      className="relative min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center px-6 md:px-12 lg:px-[12%] overflow-hidden transition-colors duration-500"
     >
       {/* Blur Backgrounds */}
-      <div className="absolute top-0 left-0 w-[400px] h-[250px] bg-purple-600 blur-[270px] -z-10"></div>
-      <div className="absolute bottom-0 left-1/3 w-[400px] h-[250px] bg-purple-600 blur-[300px] -z-10"></div>
-      <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-purple-600 blur-[130px] -z-10"></div>
+      <div className="absolute top-0 left-0 w-[400px] h-[250px] 
+        bg-purple-600/60 dark:bg-purple-800/70 
+        blur-[270px] -z-10 transition-colors duration-500"></div>
+
+      <div className="absolute bottom-0 left-1/3 w-[400px] h-[250px] 
+        bg-purple-400/70 dark:bg-purple-700/70 
+        blur-[300px] -z-10 transition-colors duration-500"></div>
+
+      <div className="absolute top-0 right-0 w-[150px] h-[150px] 
+        bg-purple-300/60 dark:bg-purple-600/70 
+        blur-[130px] -z-10 transition-colors duration-500"></div>
+
 
       {/* Content */}
       <div

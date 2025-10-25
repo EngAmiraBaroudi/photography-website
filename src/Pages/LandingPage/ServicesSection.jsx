@@ -73,7 +73,7 @@ const ServicesSection = () => {
       <Navbar />
       <section
         id="Services"
-        className="px-6 md:px-12 lg:px-[12%] py-16 md:py-24 bg-black text-white overflow-hidden"
+        className="px-6 md:px-12 lg:px-[12%] py-16 md:py-24 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 overflow-hidden"
       >
         {/* Header */}
         <div className="pb-10 text-center" data-aos="fade-up">

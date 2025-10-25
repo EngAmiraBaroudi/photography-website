@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <nav className={`Navbar flex items-center justify-between px-[8%] lg:px-[12%]
              py-5 z-50 w-full transition-all duration-300 ease-in-out
-              ${isSticky ? 'fixed top-0 bg-white dark:bg-black shadow-md translate-y-0 opacity-100' : 'relative'
+              ${isSticky ? 'fixed top-0 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 shadow-md translate-y-0 opacity-100' : 'relative'
             }`} data-aos="fade-down">
 
             <div className='logo text-3xl font-bricolage font-bold'>

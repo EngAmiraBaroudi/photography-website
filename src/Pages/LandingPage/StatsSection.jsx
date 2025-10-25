@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 const StatsSection = () => {
   return (
     <section
-      className="px-6 md:px-12 lg:px-[12%] py-20 bg-black text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center"
+      className="px-6 md:px-12 lg:px-[12%] py-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center"
       data-aos="fade-up"
     >
       {/* عدد الجلسات */}

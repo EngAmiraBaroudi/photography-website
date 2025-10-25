@@ -10,32 +10,41 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-
 }
 
+/* الألوان العامة */
 :root {
   --prim-color: #f4e005;
   --second-color: #d42929;
-  --body-color: #1c1c1c;
+  --body-color: #f9f9f9; /* لون خلفية فاتح للوضع العادي */
+  --text-color: #000;
+  --text-light: #555;
   --white-color: #fff;
   --black-color: #000;
-  --text-light: #cdcdcd;
 
   --Poppins-font: "Poppins", sans-serif;
   --Bricolage-font: "Bricolage Grotesque", sans-serif;
 
   --transition-regular: .3s;
   --transition-slow: .6s;
-
 }
 
+/* الوضع الداكن */
+.dark {
+  --body-color: #1c1c1c;
+  --text-color: #fff;
+  --text-light: #cdcdcd;
+}
+
+/* جسم الصفحة */
 body {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
   overflow-x: hidden !important;
 }
 
-
+/* بطاقات التصميم */
 .design-card::after {
   content: '';
   position: absolute;
@@ -55,9 +64,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(0deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0) 40%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0) 40%);
   opacity: 0;
-  transition: var(--transition-regular);
   transition: .1s;
 }
 
@@ -73,5 +81,3 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-

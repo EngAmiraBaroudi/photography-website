@@ -21,7 +21,7 @@ const BrandsSection = () => {
   return (
     <section
       id="clients"
-      className="px-6 md:px-12 lg:px-[12%] py-20 bg-black text-white overflow-hidden"
+      className="px-6 md:px-12 lg:px-[12%] py-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 overflow-hidden"
       data-aos="fade-up"
     >
       {/* العنوان */}

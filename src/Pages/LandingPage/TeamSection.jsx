@@ -10,7 +10,7 @@ const TeamSection = () => {
   return (
     <>
     <Navbar />
-    <main className="py-16 bg-black" id="Teams">
+    <main className="py-16 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500" id="Teams">
       <div className="px-6 md:px-12 lg:px-[12%] flex justify-between items-start md:items-center flex-col md:flex-row" data-aos="fade-up">
         <div className="title mb-10">
           <span className="text-purple-500 border border-purple-500 rounded px-3 py-1 font-bold font-bricolage">

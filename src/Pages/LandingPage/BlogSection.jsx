@@ -40,15 +40,15 @@ const blogs = [
 const BlogSection = () => {
   return (
     <>
-      {/* ✅ Navbar دائم بالأعلى */}
+      {/* Navbar دائم بالأعلى */}
       <Navbar />
 
       <main
-        className="px-6 md:px-12 lg:px-[12%] py-20 w-full bg-black text-white min-h-screen"
+        className="px-6 md:px-12 lg:px-[12%] py-20 w-full bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 min-h-screen"
         id="Blog"
         data-aos="fade-up"
       >
-        {/* ✅ العنوان */}
+        {/* العنوان */}
         <div className="flex justify-between items-start md:items-center flex-col md:flex-row">
           <div className="mb-10">
             <span className="text-purple-500 border border-purple-500 rounded px-3 py-1 font-semibold font-bricolage tracking-wide uppercase">
@@ -87,10 +87,10 @@ const BlogSection = () => {
                   className="w-full h-64 md:h-80 object-cover rounded-xl transition duration-500 group-hover:scale-110"
                 />
 
-                {/* ✅ طبقة شفافة عند الهوفر */}
+                {/* طبقة شفافة عند الهوفر */}
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300"></div>
 
-                {/* ✅ المحتوى فوق الصورة */}
+                {/* المحتوى فوق الصورة */}
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <span className="text-xs uppercase bg-purple-500/80 px-3 py-1 rounded-full">
                     {blog.category}

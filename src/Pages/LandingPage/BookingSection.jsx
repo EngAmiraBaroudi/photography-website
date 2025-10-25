@@ -18,7 +18,7 @@ const BookingPage = () => {
 
       <section
         id="Booking"
-        className="min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-[12%] py-16 bg-black text-white relative overflow-hidden"
+        className="min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-[12%] py-16 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 relative overflow-hidden"
       >
         {/* خلفية ضبابية */}
         <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-purple-700 blur-[250px] opacity-40 -z-10"></div>
